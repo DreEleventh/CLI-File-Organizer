@@ -38,7 +38,7 @@ A powerful command-line utility for automatically organizing files into categori
 ### Setup
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/yourusername/enhanced-file-organizer.git
+   git clone https://github.com/DreEleventh/CLI-File-Organizer.git
    cd enhanced-file-organizer
    ```
 
