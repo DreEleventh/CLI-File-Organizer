@@ -90,35 +90,35 @@ A powerful command-line utility for automatically organizing files into categori
 
 ### Basic Organization
 ```bash
-  # Organize files from Downloads folder
-python3 organizer.py ~/Downloads --dest ~/OrganizedFiles
-
-# Dry run to see what would happen
-python3 organizer.py ~/Downloads --dry-run
+   # Organize files from Downloads folder
+   python3 organizer.py ~/Downloads --dest ~/OrganizedFiles
+   
+   # Dry run to see what would happen
+   python3 organizer.py ~/Downloads --dry-run
 ```
 
 ### Advanced Usage
 ```bash
-  # Recursively organize with custom destination
-python3 organizer.py ~/Documents --dest ~/Sorted --recursive
-
-# Copy only PDF files larger than 1MB
-python3 organizer.py ~/Files --copy --pattern ".*\.pdf$" --min-size 1048576
-
-# Exclude temporary files and organize
-python3 organizer.py ~/Project --exclude ".*\.tmp$|.*\.temp$"
-
-# Organize with undo log
-python3 organizer.py ~/MessyFolder --save-log operation_log.json
+   # Recursively organize with custom destination
+   python3 organizer.py ~/Documents --dest ~/Sorted --recursive
+   
+   # Copy only PDF files larger than 1MB
+   python3 organizer.py ~/Files --copy --pattern ".*\.pdf$" --min-size 1048576
+   
+   # Exclude temporary files and organize
+   python3 organizer.py ~/Project --exclude ".*\.tmp$|.*\.temp$"
+   
+   # Organize with undo log
+   python3 organizer.py ~/MessyFolder --save-log operation_log.json
 ```
 
 ### Undo Operations
 ```bash
-  # Undo previous organization
-python3 organizer.py --undo operation_log.json
-
-# Dry run undo to see what would be reversed
-python3 organizer.py --undo operation_log.json --dry-run
+   # Undo previous organization
+   python3 organizer.py --undo operation_log.json
+   
+   # Dry run undo to see what would be reversed
+   python3 organizer.py --undo operation_log.json --dry-run
 ```
 
 ### Custom Configuration
